@@ -1,4 +1,4 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const config = require('@monorepo/eslint-config')
+const config = require('@psb/eslint-config')
 
 module.exports = config

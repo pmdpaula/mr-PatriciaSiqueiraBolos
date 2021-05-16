@@ -1,5 +1,5 @@
 {
-  "name": "monorepo",
+  "name": "psb",
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
@@ -12,15 +12,26 @@
     ]
   },
   "scripts": {
+    "commit": "cz",
+    "sbui": "yarn workspace @psb/sbui",
+    "sbui:start": "yarn sbui start",
+    "sbui:build": "yarn sbui build",
+    "sbui:commit": "yarn sbui commit",
     "test": "jest"
   },
   "devDependencies": {
-    "@monorepo/eslint-config": "*",
+    "@psb/eslint-config": "*",
     "@types/jest": "^26.0.23",
+    "cz-conventional-changelog": "^3.3.0",
     "jest": "^26.6.3",
     "ts-jest": "^26.5.6",
     "typescript": "^4.2.4",
     "webpack-dev-server": "^3.11.2"
   },
-  "repository": "git@github.com:pmdpaula/monorepo-rocketseat.git"
+  "repository": "git@github.com:pmdpaula/mr-PatriciaSiqueiraBolos.git",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
