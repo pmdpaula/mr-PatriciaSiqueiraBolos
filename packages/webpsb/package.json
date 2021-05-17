@@ -1,12 +1,13 @@
 {
-  "name": "@psb/wegbpsb",
+  "name": "@psb/webpsb",
   "version": "1.0.0",
   "main": "index.ts",
 
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --ignore-path .eslintignore ."
   },
   "dependencies": {
     "next": "latest",
