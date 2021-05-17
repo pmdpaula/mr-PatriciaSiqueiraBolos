@@ -1,3 +1,3 @@
-const config = require('@psb/eslint-config')
+const config = require('@psb/eslint-config');
 
-module.exports = config
+module.exports = config;
