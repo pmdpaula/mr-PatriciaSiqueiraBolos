@@ -1,37 +1,37 @@
 {
   "name": "@psb/sbui",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "src/shared/index.ts",
   "private": true,
   "scripts": {
     "start": "start-storybook -p 6006 -s public",
     "build": "build-storybook -s public -o build",
-    "lint": "eslint --ignore-path .eslintignore .",
-    "commit": "cz"
+    "lint": "eslint --ignore-path .eslintignore ."
   },
   "dependencies": {
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
-    "styled-components": "^5.2.3"
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.2",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
+    "@storybook/node-logger": "^6.2.9",
+    "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.9",
-    "@types/node": "15.0.0",
-    "@types/react": "17.0.4",
-    "@types/react-dom": "17.0.3",
-    "@types/styled-components": "5.1.9",
-    "babel-loader": "^8.2.2",
-    "babel-plugin-styled-components": "^1.12.0",
-    "cz-conventional-changelog": "3.3.0",
-    "typescript": "4.2.4"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0"
   },
-  "license": "MIT",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
